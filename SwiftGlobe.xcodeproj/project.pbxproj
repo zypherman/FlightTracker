@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8714AC7D1E9803410069A8F1 /* earth-bump.png in Resources */ = {isa = PBXBuildFile; fileRef = 8714AC791E9803410069A8F1 /* earth-bump.png */; };
+		87A3DA9D2450DC7700D772B9 /* metalness.png in Resources */ = {isa = PBXBuildFile; fileRef = 87A3DA9B2450DC7700D772B9 /* metalness.png */; };
+		87A3DAA12450DC7700D772B9 /* roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 87A3DA9C2450DC7700D772B9 /* roughness.png */; };
+		87A3DAA72450DCFE00D772B9 /* world-large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87A3DAA52450DCFD00D772B9 /* world-large.jpg */; };
+		87A3DAAB2450DCFE00D772B9 /* world-ultra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87A3DAA62450DCFD00D772B9 /* world-ultra.jpg */; };
+		87ACA57B1EC3BEA9002C6964 /* eso0932a_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 87ACA5751EC3BEA9002C6964 /* eso0932a_back.png */; };
+		87ACA57E1EC3BEA9002C6964 /* eso0932a_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 87ACA5761EC3BEA9002C6964 /* eso0932a_bottom.png */; };
+		87ACA5811EC3BEA9002C6964 /* eso0932a_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 87ACA5771EC3BEA9002C6964 /* eso0932a_front.png */; };
+		87ACA5841EC3BEA9002C6964 /* eso0932a_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 87ACA5781EC3BEA9002C6964 /* eso0932a_left.png */; };
+		87ACA5871EC3BEA9002C6964 /* eso0932a_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 87ACA5791EC3BEA9002C6964 /* eso0932a_right.png */; };
+		87ACA58A1EC3BEA9002C6964 /* eso0932a_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 87ACA57A1EC3BEA9002C6964 /* eso0932a_top.png */; };
+		87B247931E96C20B00A2EAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B247921E96C20B00A2EAA7 /* AppDelegate.swift */; };
+		87B247951E96C20B00A2EAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B247941E96C20B00A2EAA7 /* ViewController.swift */; };
+		87B247981E96C20B00A2EAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B247961E96C20B00A2EAA7 /* Main.storyboard */; };
+		87B2479A1E96C20B00A2EAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B247991E96C20B00A2EAA7 /* Assets.xcassets */; };
+		87B2479D1E96C20B00A2EAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B2479B1E96C20B00A2EAA7 /* LaunchScreen.storyboard */; };
+		87B247C91E96C75D00A2EAA7 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87B247C51E96C75D00A2EAA7 /* earth-specular.jpg */; };
+		87B247FE1E96D5F700A2EAA7 /* SwiftGlobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B247FD1E96D5F700A2EAA7 /* SwiftGlobe.swift */; };
+		87B2481C1E97112200A2EAA7 /* whiteGlow-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B2481B1E97112200A2EAA7 /* whiteGlow-32x32.png */; };
+		87B2481F1E9711E600A2EAA7 /* yellowGlow-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B2481E1E9711E600A2EAA7 /* yellowGlow-32x32.png */; };
+		87E736F2244F4C2D00E7BC0F /* GlowingMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E736F1244F4C2D00E7BC0F /* GlowingMarker.swift */; };
+		87E7370E244F83E500E7BC0F /* earth-emissive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E7370D244F83E500E7BC0F /* earth-emissive.jpg */; };
+		C90C57E32C208AB200D4AC6E /* SwiftGlobe_WatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C57E22C208AB200D4AC6E /* SwiftGlobe_WatchOSApp.swift */; };
+		C90C57E52C208AB200D4AC6E /* WatchFlightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C57E42C208AB200D4AC6E /* WatchFlightInfoView.swift */; };
+		C90C57E72C208AB300D4AC6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90C57E62C208AB300D4AC6E /* Assets.xcassets */; };
+		C90C57EA2C208AB300D4AC6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90C57E92C208AB300D4AC6E /* Preview Assets.xcassets */; };
+		C90C58032C208AB300D4AC6E /* SwiftGlobe-WatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C90C57E02C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C90C58122C20910E00D4AC6E /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C58112C20910E00D4AC6E /* WatchConnectivityManager.swift */; };
+		C90C58142C2092D100D4AC6E /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C58132C2092D100D4AC6E /* WatchConnectivityManager.swift */; };
+		C90C58172C210E2D00D4AC6E /* Codables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C58152C210DCE00D4AC6E /* Codables.swift */; };
+		C94456412C155F9B007A7B4F /* InflightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94456402C155F9B007A7B4F /* InflightService.swift */; };
+		C94456472C156C5F007A7B4F /* FlightInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94456462C156C5F007A7B4F /* FlightInfoModel.swift */; };
+		C944564D2C157014007A7B4F /* GlobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944564C2C157014007A7B4F /* GlobeView.swift */; };
+		C94456552C157A5D007A7B4F /* blueGlow-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = C94456522C157A5D007A7B4F /* blueGlow-32x32.png */; };
+		C944565A2C157A5D007A7B4F /* greenGlow-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = C94456532C157A5D007A7B4F /* greenGlow-32x32.png */; };
+		C944565F2C157A5D007A7B4F /* redGlow-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = C94456542C157A5D007A7B4F /* redGlow-32x32.png */; };
+		C94456652C158545007A7B4F /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C94456642C158545007A7B4F /* airports.json */; };
+		C944566C2C1781B6007A7B4F /* WifiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944566B2C1781B6007A7B4F /* WifiManager.swift */; };
+		C94A05AE2C0E81F00094E8A0 /* SwiftAstro in Frameworks */ = {isa = PBXBuildFile; productRef = C94A05AD2C0E81F00094E8A0 /* SwiftAstro */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90C58012C208AB300D4AC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87B247871E96C20B00A2EAA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90C57DF2C208AB200D4AC6E;
+			remoteInfo = "SwiftGlobe-WatchOS Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C90C58072C208AB300D4AC6E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C90C58032C208AB300D4AC6E /* SwiftGlobe-WatchOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8714AC791E9803410069A8F1 /* earth-bump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-bump.png"; sourceTree = "<group>"; };
+		87A3DA9B2450DC7700D772B9 /* metalness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metalness.png; sourceTree = "<group>"; };
+		87A3DA9C2450DC7700D772B9 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		87A3DAA52450DCFD00D772B9 /* world-large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "world-large.jpg"; sourceTree = "<group>"; };
+		87A3DAA62450DCFD00D772B9 /* world-ultra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "world-ultra.jpg"; sourceTree = "<group>"; };
+		87A3DAB02450DDE300D772B9 /* eso0932a_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_left.png; sourceTree = "<group>"; };
+		87A3DAB12450DDE300D772B9 /* world-large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "world-large.jpg"; sourceTree = "<group>"; };
+		87A3DAB22450DDE300D772B9 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
+		87A3DAB32450DDE300D772B9 /* metalness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metalness.png; sourceTree = "<group>"; };
+		87A3DAB42450DDE300D772B9 /* earth-bump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-bump.png"; sourceTree = "<group>"; };
+		87A3DAB52450DDE300D772B9 /* eso0932a_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_back.png; sourceTree = "<group>"; };
+		87A3DAB62450DDE300D772B9 /* eso0932a_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_right.png; sourceTree = "<group>"; };
+		87A3DAB72450DDE300D772B9 /* eso0932a_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_front.png; sourceTree = "<group>"; };
+		87A3DAB82450DDE300D772B9 /* world-ultra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "world-ultra.jpg"; sourceTree = "<group>"; };
+		87A3DAB92450DDE300D772B9 /* earth-emissive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-emissive.jpg"; sourceTree = "<group>"; };
+		87A3DABA2450DDE300D772B9 /* eso0932a_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_top.png; sourceTree = "<group>"; };
+		87A3DABB2450DDE300D772B9 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		87A3DABC2450DDE300D772B9 /* eso0932a_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_bottom.png; sourceTree = "<group>"; };
+		87ACA5751EC3BEA9002C6964 /* eso0932a_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_back.png; sourceTree = "<group>"; };
+		87ACA5761EC3BEA9002C6964 /* eso0932a_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_bottom.png; sourceTree = "<group>"; };
+		87ACA5771EC3BEA9002C6964 /* eso0932a_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_front.png; sourceTree = "<group>"; };
+		87ACA5781EC3BEA9002C6964 /* eso0932a_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_left.png; sourceTree = "<group>"; };
+		87ACA5791EC3BEA9002C6964 /* eso0932a_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_right.png; sourceTree = "<group>"; };
+		87ACA57A1EC3BEA9002C6964 /* eso0932a_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_top.png; sourceTree = "<group>"; };
+		87B2478F1E96C20B00A2EAA7 /* SwiftGlobe-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftGlobe-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B247921E96C20B00A2EAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87B247941E96C20B00A2EAA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87B247971E96C20B00A2EAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87B247991E96C20B00A2EAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87B2479C1E96C20B00A2EAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87B2479E1E96C20B00A2EAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87B247C51E96C75D00A2EAA7 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
+		87B247FD1E96D5F700A2EAA7 /* SwiftGlobe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGlobe.swift; sourceTree = "<group>"; };
+		87B2481B1E97112200A2EAA7 /* whiteGlow-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteGlow-32x32.png"; sourceTree = "<group>"; };
+		87B2481E1E9711E600A2EAA7 /* yellowGlow-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellowGlow-32x32.png"; sourceTree = "<group>"; };
+		87E736F1244F4C2D00E7BC0F /* GlowingMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingMarker.swift; sourceTree = "<group>"; };
+		87E7370D244F83E500E7BC0F /* earth-emissive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-emissive.jpg"; sourceTree = "<group>"; };
+		87E955CF1EC3897F007496A9 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		C90C57E02C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftGlobe-WatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90C57E22C208AB200D4AC6E /* SwiftGlobe_WatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGlobe_WatchOSApp.swift; sourceTree = "<group>"; };
+		C90C57E42C208AB200D4AC6E /* WatchFlightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFlightInfoView.swift; sourceTree = "<group>"; };
+		C90C57E62C208AB300D4AC6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C90C57E92C208AB300D4AC6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C90C58112C20910E00D4AC6E /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		C90C58132C2092D100D4AC6E /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		C90C58152C210DCE00D4AC6E /* Codables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codables.swift; sourceTree = "<group>"; };
+		C94456402C155F9B007A7B4F /* InflightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InflightService.swift; sourceTree = "<group>"; };
+		C94456462C156C5F007A7B4F /* FlightInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoModel.swift; sourceTree = "<group>"; };
+		C944564C2C157014007A7B4F /* GlobeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobeView.swift; sourceTree = "<group>"; };
+		C94456522C157A5D007A7B4F /* blueGlow-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueGlow-32x32.png"; sourceTree = "<group>"; };
+		C94456532C157A5D007A7B4F /* greenGlow-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenGlow-32x32.png"; sourceTree = "<group>"; };
+		C94456542C157A5D007A7B4F /* redGlow-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redGlow-32x32.png"; sourceTree = "<group>"; };
+		C94456642C158545007A7B4F /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		C944566A2C178135007A7B4F /* SwiftGlobe-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftGlobe-iOS.entitlements"; sourceTree = "<group>"; };
+		C944566B2C1781B6007A7B4F /* WifiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87B2478C1E96C20B00A2EAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94A05AE2C0E81F00094E8A0 /* SwiftAstro in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90C57DD2C208AB200D4AC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87A3DAAF2450DDE300D772B9 /* earth-watch */ = {
+			isa = PBXGroup;
+			children = (
+				87A3DAB02450DDE300D772B9 /* eso0932a_left.png */,
+				87A3DAB12450DDE300D772B9 /* world-large.jpg */,
+				87A3DAB22450DDE300D772B9 /* earth-specular.jpg */,
+				87A3DAB32450DDE300D772B9 /* metalness.png */,
+				87A3DAB42450DDE300D772B9 /* earth-bump.png */,
+				87A3DAB52450DDE300D772B9 /* eso0932a_back.png */,
+				87A3DAB62450DDE300D772B9 /* eso0932a_right.png */,
+				87A3DAB72450DDE300D772B9 /* eso0932a_front.png */,
+				87A3DAB82450DDE300D772B9 /* world-ultra.jpg */,
+				87A3DAB92450DDE300D772B9 /* earth-emissive.jpg */,
+				87A3DABA2450DDE300D772B9 /* eso0932a_top.png */,
+				87A3DABB2450DDE300D772B9 /* roughness.png */,
+				87A3DABC2450DDE300D772B9 /* eso0932a_bottom.png */,
+			);
+			path = "earth-watch";
+			sourceTree = "<group>";
+		};
+		87B247861E96C20B00A2EAA7 = {
+			isa = PBXGroup;
+			children = (
+				C9CB9B3C2C0D0D6600997F05 /* Packages */,
+				87E955CF1EC3897F007496A9 /* readme.md */,
+				87E736F0244F4BD600E7BC0F /* src */,
+				87B247911E96C20B00A2EAA7 /* SwiftGlobe-iOS */,
+				C90C57E12C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App */,
+				87B247901E96C20B00A2EAA7 /* Products */,
+				C9CB9B392C0D03B300997F05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87B247901E96C20B00A2EAA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87B2478F1E96C20B00A2EAA7 /* SwiftGlobe-iOS.app */,
+				C90C57E02C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87B247911E96C20B00A2EAA7 /* SwiftGlobe-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C944566A2C178135007A7B4F /* SwiftGlobe-iOS.entitlements */,
+				87B247921E96C20B00A2EAA7 /* AppDelegate.swift */,
+				87B247941E96C20B00A2EAA7 /* ViewController.swift */,
+				87B247961E96C20B00A2EAA7 /* Main.storyboard */,
+				87B247991E96C20B00A2EAA7 /* Assets.xcassets */,
+				87B2479B1E96C20B00A2EAA7 /* LaunchScreen.storyboard */,
+				87B2479E1E96C20B00A2EAA7 /* Info.plist */,
+			);
+			path = "SwiftGlobe-iOS";
+			sourceTree = "<group>";
+		};
+		87B247C01E96C75D00A2EAA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C94456642C158545007A7B4F /* airports.json */,
+				87B247FD1E96D5F700A2EAA7 /* SwiftGlobe.swift */,
+				87B247C11E96C75D00A2EAA7 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87B247C11E96C75D00A2EAA7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C94456522C157A5D007A7B4F /* blueGlow-32x32.png */,
+				C94456532C157A5D007A7B4F /* greenGlow-32x32.png */,
+				C94456542C157A5D007A7B4F /* redGlow-32x32.png */,
+				87B2481B1E97112200A2EAA7 /* whiteGlow-32x32.png */,
+				87B2481E1E9711E600A2EAA7 /* yellowGlow-32x32.png */,
+				87A3DAAF2450DDE300D772B9 /* earth-watch */,
+				87B247C21E96C75D00A2EAA7 /* earth */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		87B247C21E96C75D00A2EAA7 /* earth */ = {
+			isa = PBXGroup;
+			children = (
+				8714AC791E9803410069A8F1 /* earth-bump.png */,
+				87E7370D244F83E500E7BC0F /* earth-emissive.jpg */,
+				87A3DAA52450DCFD00D772B9 /* world-large.jpg */,
+				87A3DAA62450DCFD00D772B9 /* world-ultra.jpg */,
+				87A3DA9B2450DC7700D772B9 /* metalness.png */,
+				87A3DA9C2450DC7700D772B9 /* roughness.png */,
+				87ACA5751EC3BEA9002C6964 /* eso0932a_back.png */,
+				87ACA5761EC3BEA9002C6964 /* eso0932a_bottom.png */,
+				87ACA5771EC3BEA9002C6964 /* eso0932a_front.png */,
+				87ACA5781EC3BEA9002C6964 /* eso0932a_left.png */,
+				87ACA5791EC3BEA9002C6964 /* eso0932a_right.png */,
+				87ACA57A1EC3BEA9002C6964 /* eso0932a_top.png */,
+				87B247C51E96C75D00A2EAA7 /* earth-specular.jpg */,
+			);
+			path = earth;
+			sourceTree = "<group>";
+		};
+		87E736F0244F4BD600E7BC0F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				87E736F1244F4C2D00E7BC0F /* GlowingMarker.swift */,
+				87B247C01E96C75D00A2EAA7 /* Resources */,
+				C94456402C155F9B007A7B4F /* InflightService.swift */,
+				C94456462C156C5F007A7B4F /* FlightInfoModel.swift */,
+				C944564C2C157014007A7B4F /* GlobeView.swift */,
+				C944566B2C1781B6007A7B4F /* WifiManager.swift */,
+				C90C58112C20910E00D4AC6E /* WatchConnectivityManager.swift */,
+				C90C58152C210DCE00D4AC6E /* Codables.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C90C57E12C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C90C57E22C208AB200D4AC6E /* SwiftGlobe_WatchOSApp.swift */,
+				C90C57E42C208AB200D4AC6E /* WatchFlightInfoView.swift */,
+				C90C57E62C208AB300D4AC6E /* Assets.xcassets */,
+				C90C57E82C208AB300D4AC6E /* Preview Content */,
+				C90C58132C2092D100D4AC6E /* WatchConnectivityManager.swift */,
+			);
+			path = "SwiftGlobe-WatchOS Watch App";
+			sourceTree = "<group>";
+		};
+		C90C57E82C208AB300D4AC6E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C90C57E92C208AB300D4AC6E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9CB9B392C0D03B300997F05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9CB9B3C2C0D0D6600997F05 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87B2478E1E96C20B00A2EAA7 /* SwiftGlobe-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B247B71E96C20B00A2EAA7 /* Build configuration list for PBXNativeTarget "SwiftGlobe-iOS" */;
+			buildPhases = (
+				87B2478B1E96C20B00A2EAA7 /* Sources */,
+				87B2478C1E96C20B00A2EAA7 /* Frameworks */,
+				87B2478D1E96C20B00A2EAA7 /* Resources */,
+				C90C58072C208AB300D4AC6E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90C58022C208AB300D4AC6E /* PBXTargetDependency */,
+			);
+			name = "SwiftGlobe-iOS";
+			packageProductDependencies = (
+				C94A05AD2C0E81F00094E8A0 /* SwiftAstro */,
+			);
+			productName = SwiftGlobe;
+			productReference = 87B2478F1E96C20B00A2EAA7 /* SwiftGlobe-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90C57DF2C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90C58042C208AB300D4AC6E /* Build configuration list for PBXNativeTarget "SwiftGlobe-WatchOS Watch App" */;
+			buildPhases = (
+				C90C57DC2C208AB200D4AC6E /* Sources */,
+				C90C57DD2C208AB200D4AC6E /* Frameworks */,
+				C90C57DE2C208AB200D4AC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftGlobe-WatchOS Watch App";
+			productName = "SwiftGlobe-WatchOS Watch App";
+			productReference = C90C57E02C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87B247871E96C20B00A2EAA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "David Mojdehi";
+				TargetAttributes = {
+					87B2478E1E96C20B00A2EAA7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M7VHVW86G9;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+					};
+					C90C57DF2C208AB200D4AC6E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 87B2478A1E96C20B00A2EAA7 /* Build configuration list for PBXProject "SwiftGlobe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87B247861E96C20B00A2EAA7;
+			packageReferences = (
+				C94A05AC2C0E81F00094E8A0 /* XCLocalSwiftPackageReference "Packages/SwiftAstro" */,
+			);
+			productRefGroup = 87B247901E96C20B00A2EAA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87B2478E1E96C20B00A2EAA7 /* SwiftGlobe-iOS */,
+				C90C57DF2C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87B2478D1E96C20B00A2EAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8714AC7D1E9803410069A8F1 /* earth-bump.png in Resources */,
+				87ACA57B1EC3BEA9002C6964 /* eso0932a_back.png in Resources */,
+				87ACA5841EC3BEA9002C6964 /* eso0932a_left.png in Resources */,
+				87A3DAA12450DC7700D772B9 /* roughness.png in Resources */,
+				C944565F2C157A5D007A7B4F /* redGlow-32x32.png in Resources */,
+				C94456652C158545007A7B4F /* airports.json in Resources */,
+				87ACA57E1EC3BEA9002C6964 /* eso0932a_bottom.png in Resources */,
+				87B2479D1E96C20B00A2EAA7 /* LaunchScreen.storyboard in Resources */,
+				87ACA5871EC3BEA9002C6964 /* eso0932a_right.png in Resources */,
+				C944565A2C157A5D007A7B4F /* greenGlow-32x32.png in Resources */,
+				87B2479A1E96C20B00A2EAA7 /* Assets.xcassets in Resources */,
+				87B2481F1E9711E600A2EAA7 /* yellowGlow-32x32.png in Resources */,
+				87A3DAAB2450DCFE00D772B9 /* world-ultra.jpg in Resources */,
+				87A3DAA72450DCFE00D772B9 /* world-large.jpg in Resources */,
+				87B247981E96C20B00A2EAA7 /* Main.storyboard in Resources */,
+				C94456552C157A5D007A7B4F /* blueGlow-32x32.png in Resources */,
+				87ACA5811EC3BEA9002C6964 /* eso0932a_front.png in Resources */,
+				87B247C91E96C75D00A2EAA7 /* earth-specular.jpg in Resources */,
+				87A3DA9D2450DC7700D772B9 /* metalness.png in Resources */,
+				87B2481C1E97112200A2EAA7 /* whiteGlow-32x32.png in Resources */,
+				87ACA58A1EC3BEA9002C6964 /* eso0932a_top.png in Resources */,
+				87E7370E244F83E500E7BC0F /* earth-emissive.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90C57DE2C208AB200D4AC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90C57EA2C208AB300D4AC6E /* Preview Assets.xcassets in Resources */,
+				C90C57E72C208AB300D4AC6E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87B2478B1E96C20B00A2EAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B247FE1E96D5F700A2EAA7 /* SwiftGlobe.swift in Sources */,
+				87B247951E96C20B00A2EAA7 /* ViewController.swift in Sources */,
+				C90C58172C210E2D00D4AC6E /* Codables.swift in Sources */,
+				87B247931E96C20B00A2EAA7 /* AppDelegate.swift in Sources */,
+				87E736F2244F4C2D00E7BC0F /* GlowingMarker.swift in Sources */,
+				C90C58122C20910E00D4AC6E /* WatchConnectivityManager.swift in Sources */,
+				C94456412C155F9B007A7B4F /* InflightService.swift in Sources */,
+				C94456472C156C5F007A7B4F /* FlightInfoModel.swift in Sources */,
+				C944566C2C1781B6007A7B4F /* WifiManager.swift in Sources */,
+				C944564D2C157014007A7B4F /* GlobeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90C57DC2C208AB200D4AC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90C57E52C208AB200D4AC6E /* WatchFlightInfoView.swift in Sources */,
+				C90C58142C2092D100D4AC6E /* WatchConnectivityManager.swift in Sources */,
+				C90C57E32C208AB200D4AC6E /* SwiftGlobe_WatchOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90C58022C208AB300D4AC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90C57DF2C208AB200D4AC6E /* SwiftGlobe-WatchOS Watch App */;
+			targetProxy = C90C58012C208AB300D4AC6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87B247961E96C20B00A2EAA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B247971E96C20B00A2EAA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87B2479B1E96C20B00A2EAA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B2479C1E96C20B00A2EAA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87B247B51E96C20B00A2EAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87B247B61E96C20B00A2EAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87B247B81E96C20B00A2EAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SwiftGlobe-iOS/SwiftGlobe-iOS.entitlements";
+				DEVELOPMENT_TEAM = M7VHVW86G9;
+				INFOPLIST_FILE = "SwiftGlobe-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindfulbear.SwiftGlobe-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87B247B91E96C20B00A2EAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SwiftGlobe-iOS/SwiftGlobe-iOS.entitlements";
+				DEVELOPMENT_TEAM = M7VHVW86G9;
+				INFOPLIST_FILE = "SwiftGlobe-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindfulbear.SwiftGlobe-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C90C58052C208AB300D4AC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftGlobe-WatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M7VHVW86G9;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftGlobe-WatchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.mindfulbear.SwiftGlobe-iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindfulbear.SwiftGlobe-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		C90C58062C208AB300D4AC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftGlobe-WatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M7VHVW86G9;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftGlobe-WatchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.mindfulbear.SwiftGlobe-iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindfulbear.SwiftGlobe-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87B2478A1E96C20B00A2EAA7 /* Build configuration list for PBXProject "SwiftGlobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B247B51E96C20B00A2EAA7 /* Debug */,
+				87B247B61E96C20B00A2EAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B247B71E96C20B00A2EAA7 /* Build configuration list for PBXNativeTarget "SwiftGlobe-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B247B81E96C20B00A2EAA7 /* Debug */,
+				87B247B91E96C20B00A2EAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90C58042C208AB300D4AC6E /* Build configuration list for PBXNativeTarget "SwiftGlobe-WatchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90C58052C208AB300D4AC6E /* Debug */,
+				C90C58062C208AB300D4AC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C94A05AC2C0E81F00094E8A0 /* XCLocalSwiftPackageReference "Packages/SwiftAstro" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SwiftAstro;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C94A05AD2C0E81F00094E8A0 /* SwiftAstro */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftAstro;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 87B247871E96C20B00A2EAA7 /* Project object */;
+}
